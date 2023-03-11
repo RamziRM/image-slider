@@ -40,3 +40,6 @@ function nextImage() {
     // show the next image (new currentImage)
     images[currentImage].classList.add('active');
 }
+
+// auto slide show -- timeout advance to next image every 5 seconds
+setInterval(nextImage, 5000);
